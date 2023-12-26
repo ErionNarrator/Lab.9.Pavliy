@@ -33,8 +33,8 @@
         double side2 = Math.Sqrt(Math.Pow(x3 - x2, 2) + Math.Pow(y3 - y2, 2));
         double side3 = Math.Sqrt(Math.Pow(x1 - x3, 2) + Math.Pow(y1 - y3, 2));
 
-        double semiperimeter = (side1 + side2 + side3) / 2;
-        double area = Math.Sqrt(semiperimeter * (semiperimeter - side1) * (semiperimeter - side2) * (semiperimeter - side3));
+        double l = (side1 + side2 + side3) / 2;
+        double area = Math.Sqrt(l * (l - side1) * (l - side2) * (l - side3));
 
         return area;
     }
@@ -62,8 +62,8 @@ public class Vector3 : Vector
         double side2 = Math.Sqrt(Math.Pow(x3 - x2, 2) + Math.Pow(y3 - y2, 2));
         double side3 = Math.Sqrt(Math.Pow(x1 - x3, 2) + Math.Pow(y1 - y3, 2));
 
-        double semiperimeter = (side1 + side2 + side3) / 2;
-        double area = Math.Sqrt(semiperimeter * (semiperimeter - side1) * (semiperimeter - side2) * (semiperimeter - side3));
+        double l = (side1 + side2 + side3) / 2;
+        double area = Math.Sqrt(l * (l - side1) * (l - side2) * (l - side3));
 
         return area;
     }
